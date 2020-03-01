@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StaticDataService } from '../../static-data.service';
 
 @Component({
   selector: 'app-menu-add',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuAddComponent implements OnInit {
 
-  constructor() { }
+  cuisines:any[];
+  constructor(private staticdataService:StaticDataService) { }
 
   ngOnInit(): void {
+    //this.staticdataService.getCuisines()
+
   }
 
 }

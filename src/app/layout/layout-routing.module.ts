@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'order', loadChildren: () => import('./order/order.module').then(m => m.OrderModule) },
   { path: 'invoice', loadChildren: () => import('./invoice/invoice.module').then(m => m.InvoiceModule) },
-  { path: 'static/add', loadChildren: () => import('./staticdata/staticdata.module').then(m => m.StaticdataModule) },
+  { path: 'static', loadChildren: () => import('./staticdata/staticdata.module').then(m => m.StaticdataModule) },
   { path: 'menu', loadChildren: () => import('./menu/menu.module').then(m => m.MenuModule) }];
 
 @NgModule({

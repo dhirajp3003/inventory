@@ -1,32 +1,36 @@
-<div class="row form-group">
-  <div class="col-sm-3">
-    <label for="">Category:</label>
-    <select class="form-control">
-      <option>Select Category</option>
-      <option>Indian</option>
-      <option>Italian</option>
-      <option>Labenese</option>
-      <option>Afghani</option>
-    </select>
+<div class="jumbotron">
+  <div class="row form-group">
+    <div class="col-sm-3">
+      <label for="">Cuisines:</label>
+      <select class="form-control">
+        <option>Select Cuisine</option>
+        <option *ngFor="let item of cuisines"></option>
+        <option>Indian</option>
+        <option>Italian</option>
+        <option>Labenese</option>
+        <option>Afghani</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+      <label for="">Product Name:</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label for="">Price:</label>
+      <input type="number" class="form-control" />
+    </div>
   </div>
-  <div class="col-sm-3">
-    <label for="">Product Name:</label>
-    <input type="text" class="form-control" />
+  <div class="row form-group">
+    <div class="col-sm-8">
+      <label for="">Detailed Description: </label>
+      <textarea class="form-control"></textarea>
+    </div>
   </div>
-  <div class="col-sm-3">
-    <label for="">Price:</label>
-    <input type="number" class="form-control" />
+  <div class="row form-group">
+    <div class="col-sm-4">
+      <label for="">Images:</label>
+      <p-fileUpload name="myfile[]" url="./upload.php" class="ml-3"></p-fileUpload>
+    </div>
   </div>
-</div>
-<div class="row form-group">
-  <div class="col-sm-8">
-    <label for="">Detailed Description: </label>
-    <textarea class="form-control"></textarea>
-  </div>
-</div>
-<div class="row form-group">
-  <div class="col-sm-4">
-    <label for="">Images:</label>
-    <p-fileUpload name="myfile[]" url="./upload.php" class="ml-3"></p-fileUpload>
-  </div>
+
 </div>

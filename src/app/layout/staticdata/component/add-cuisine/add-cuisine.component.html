@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <form>
+    <div class="row form-group">
+      <div class="col-sm-1">
+        <label for="">Cuisine:</label>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" name="cuisine" id="cuisine" class="form-control" [(ngModel)]="cuisine">
+      </div>
+      <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary" (click)="addCuisine()">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
